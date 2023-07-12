@@ -10,3 +10,30 @@ import matplotlib.pyplot as plt
 
     
 """
+
+
+
+
+def main():
+        
+    # Importing data 
+    # Path: Lesson1/data/temperature.csv 
+    path = f"../data/tetuan.csv"
+    # Importing data from a csv file
+    df = pd.read_csv(path, sep=",")
+
+    print(df.head())
+    print(df.info())
+    print(df.columns)
+    print(df.describe())
+    print(df.dtypes)
+    print(len(df))
+
+
+    
+
+
+
+
+if __name__ == "__main__":
+    main()
